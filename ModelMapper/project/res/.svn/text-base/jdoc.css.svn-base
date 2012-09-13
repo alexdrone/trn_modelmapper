@@ -1,0 +1,57 @@
+/* Javadoc style sheet */
+
+/* Define colors, fonts and other style attributes here to override the defaults */
+
+/* Page background color */
+body { 
+	font-family: "Trebuchet MS", "Lucida Grande", Tahoma;
+	font-size: 13px;
+	background-color: whitesmoke;
+}
+
+/* Headings */
+h1 { font-size: 125% }
+
+/* Table colors */
+.TableHeadingColor     { background: #4b87ad; color:whitesmoke} /* Dark mauve */
+.TableSubHeadingColor  { background: #649ab8; color:whitesmoke } /* Light mauve */
+.TableRowColor         { background: #FFFFFF; color:#000000 } /* White */
+
+/* Font used in left-hand frame lists */ 
+.FrameTitleFont   { font-size: 100%; font-family: "Trebuchet MS", "Lucida Grande", Tahoma;  color:#000000 }
+.FrameHeadingFont { font-size:  90%; font-family: "Trebuchet MS", "Lucida Grande", Tahoma;  color:#000000 }
+.FrameItemFont    { font-size:  90%; font-family: "Trebuchet MS", "Lucida Grande", Tahoma;  color:#000000 }
+
+/* Navigation bar fonts and colors */
+.NavBarCell1    { background-color:#EEEEFF; color:#000000} /* Light mauve */
+.NavBarCell1Rev { background-color:#00008B; color:#FFFFFF} /* Dark Blue */
+.NavBarFont1    { font-family: "Trebuchet MS", "Lucida Grande", Tahoma; color:#000000;color:#000000;}
+
+.NavBarCell2    { font-family: "Trebuchet MS", "Lucida Grande", Tahoma;; background-color:#FFFFFF; color:#000000}
+.NavBarCell3    { font-family: "Trebuchet MS", "Lucida Grande", Tahoma; background-color:#FFFFFF; color:#000000}
+
+pre {
+	font-family: "Menlo", "Monaco", "Andale Mono", "Courier New";
+	font-size: 11px;
+}
+
+table {
+	border: 0 solid #cfc8cf;
+}
+
+td {
+	border-style: dotted;
+	border-color: #cfc8cf;
+}
+
+a {
+	color: #73747d;
+	text-decoration: none;
+	background-color: #eceeee;
+	padding: 1px;
+}
+
+hr {
+	background-color: #b6afaf;
+	padding: 2px;
+}

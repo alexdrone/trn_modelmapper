@@ -1,0 +1,136 @@
+// 
+//  Model
+//  ModelMapper
+//  
+//  Created by Querella Luca and Usbergo Alex on 2010-01-31.
+//  Università di Torino 
+//
+ 
+package modelmapper;
+import java.sql.*;
+import java.util.*;
+import modelmapper.annotation.*;
+
+public interface Model {
+	
+	/**
+	 * Saves all changed (dirty) fields within the entity to the datasource.  
+	 * This method should almost never be overridden within a defined
+	 * implementation.  However, it is possible to do so if absolutely
+	 * necessary.
+	 */
+	public void save();
+	
+	public void delete();
+
+	public boolean validate();
+	
+	/**
+	 * The default ModelMapper Id.
+	 * If nothing is specified, the serial field using for object 
+	 * identification will be this integer (with autoincrement).
+	 * @throws ModelRuntimeException If the user defines a different Id 
+	 * field and tries to invoke <code>getId()</code>.
+	 * @return The Id value, or <code>null</code> if it's not defined yet.
+	 */
+	@Id
+	@AutoIncrement
+	public int getId();
+	
+	/**
+	 * Sets the Id value for this instance.
+	 * @param id The new class Id.
+	 * @throws ModelRuntimeException If the user defines a different Id field 
+	 * and tries to invoke <code>setId()</code>.
+	 */
+	public void setId(int id);
+	
+	/**
+	 * A convenient method for print at screen the object status/contents
+	 * @return A string representing the object 
+	 */
+	public String toString();
+	
+	public String toXml();
+	//public String toYaml();
+	public String toJson();
+	
+	
+	/**
+	 * A convenient method for retriving all the fields data of the object.
+	 * Actually is not safe but it's used in several parts of the frameworkw 
+	 * for efficency issues.
+	 * @return A {@link Map} with the objects fields values 
+	 */
+	@Deprecated
+	public Map<String, Object> fields();
+	
+	/** 
+	 * Returns the instance factory
+	 * @return A {@link ModelFactory} implementation depending from the used 
+	 * datasource
+	 * adapter 
+	 */
+	public ModelFactory modelFactory();
+	
+	/**
+	 * Returns the actual {@link Class} instance which corresponds to the
+	 * original entity interface.  This is necessary because calling 
+	 * {@link Object#getClass()}
+	 * on a proxy instance doesn't return the value one would expect.  
+	 * As such, <code>Model</code> provides this method to give developers 
+	 * access to the originating entity interface.  Example:</p>
+	 * 
+	 * <pre>public interface Person extends Model { ... }
+	 * // ...
+	 * Person p = factory.create(Person.class);
+	 * p.modelInterface(); //returns Person.class
+	 * p.getClass();       //indeterminate return value, probably something
+	 * like $ProxyN.class</pre>
+	 * 
+	 * @return The {@link Class} which defines the entity in question.
+	 */
+	public Class modelInterface();
+	
+	/**
+	 * Returns the model implementation of this proxy
+	 * @return A {@link ModelProxy} subclass
+	 */
+	public ModelProxy modelImplementation();
+	
+	/**
+	 * Checks if the object is a new entry
+	 * @return <code>true</code> if is a new record, <code>false</code> 
+	 * otherwise.
+	 */
+	public boolean newRecord();
+	
+	/**
+	 * Checks if this instance presents some differences between the stored 
+	 * one in the datasource
+	 * @return <code>true</code> if the entity is not sync with the datasource, 
+	 * <code>false</code> otherwise
+	 */
+	public boolean dirty();
+	
+	/**
+	 * Checks if the {@link Model} extends any other models.
+	 * Multiple inheritance is permitted in interfaces, and so do ModelMapper 
+	 * with models.
+	 * @return <code>true</code> if this extends any other Model, 
+	 * <code>false</code> otherwise
+	 */
+	public boolean extendsModels();
+	
+	
+	public boolean equalsId(Model o);
+	
+	public boolean compareId(Object o);
+	
+	public Timestamp updatedAt();
+		
+	public Timestamp createdAt();
+	
+	
+	
+}

@@ -1,0 +1,69 @@
+require 'fileutils'
+
+namespace :modelmapper do
+  
+  SRC     = "src/"
+  BUILD   = "build/"
+  BIN     = "bin/"
+  TEST    = "test/"
+  DOC    = "doc"
+  RES    = "res/"
+  CSS   = RES+"jdoc.css"
+  
+  desc "remove unuseful dirs"
+  task :clean do
+    FileUtils.rm_rf BUILD
+    FileUtils.rm_rf BIN
+    FileUtils.rm_rf TEST+BUILD
+    FileUtils.rm_rf DOC
+  end
+    
+  desc "compile framework"
+  task :javac do
+    FileUtils.rm_rf BUILD
+    FileUtils.mkdir BUILD
+    system("javac -d #{BUILD} #{SRC}*.java")
+    puts "complied"
+  end
+
+  desc "package framework"
+  task :package => :javac do
+    FileUtils.rm_rf BIN
+    FileUtils.mkdir BIN
+    system("jar cf #{BIN}modelmapper.jar -C #{BUILD} .")
+    puts "packaged"
+  end
+  
+  desc "jdoc"
+  task :jdoc do
+    FileUtils.rm_rf DOC
+    system("javadoc src/*.java -d #{DOC} -public -stylesheetfile #{CSS}")
+    puts "doc generated"
+  end
+  
+  namespace :test do
+
+    desc "compile test"
+    task :javac do
+      FileUtils.rm_rf TEST+BUILD
+      FileUtils.mkdir TEST+BUILD
+      system("javac -d #{TEST+BUILD} #{TEST}*.java -cp #{BIN}modelmapper.jar")
+      puts "compiled test"
+    end
+    
+    desc "run test"
+    task :run => :javac do
+      FileUtils.cd TEST+BUILD
+      system("java -cp .:../../bin/modelmapper.jar Main")
+    end
+    
+    desc "run validator"
+    task :validator => :javac do
+      FileUtils.cd TEST+BUILD
+      system("java -cp .:../../bin/modelmapper.jar modelmapper.Validator Person Account")
+    end
+    
+  end
+  
+  
+end

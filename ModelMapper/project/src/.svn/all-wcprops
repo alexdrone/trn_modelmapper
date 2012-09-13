@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/priv/10ModelMapper/!svn/ver/206/progetto/src
+END
+RDBMSSchemaGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/priv/10ModelMapper/!svn/ver/156/progetto/src/RDBMSSchemaGenerator.java
+END
+Connection.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/priv/10ModelMapper/!svn/ver/23/progetto/src/Connection.java
+END
+CommonStatic.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/priv/10ModelMapper/!svn/ver/181/progetto/src/CommonStatic.java
+END
+Xml.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/priv/10ModelMapper/!svn/ver/3/progetto/src/Xml.java
+END
+MySQLQueryGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/priv/10ModelMapper/!svn/ver/156/progetto/src/MySQLQueryGenerator.java
+END
+Attribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/priv/10ModelMapper/!svn/ver/93/progetto/src/Attribute.java
+END
+Cache.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/priv/10ModelMapper/!svn/ver/181/progetto/src/Cache.java
+END
+Unique.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/priv/10ModelMapper/!svn/ver/6/progetto/src/Unique.java
+END
+MalformedModelException.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/priv/10ModelMapper/!svn/ver/156/progetto/src/MalformedModelException.java
+END
+Finder.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/priv/10ModelMapper/!svn/ver/206/progetto/src/Finder.java
+END
+BusinessLogic.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/priv/10ModelMapper/!svn/ver/3/progetto/src/BusinessLogic.java
+END
+RDBMSModelFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/priv/10ModelMapper/!svn/ver/206/progetto/src/RDBMSModelFactory.java
+END
+Name.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/priv/10ModelMapper/!svn/ver/131/progetto/src/Name.java
+END
+ModelRuntimeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/priv/10ModelMapper/!svn/ver/50/progetto/src/ModelRuntimeException.java
+END
+Transaction.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/priv/10ModelMapper/!svn/ver/156/progetto/src/Transaction.java
+END
+RDBMSSchema.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/priv/10ModelMapper/!svn/ver/172/progetto/src/RDBMSSchema.java
+END
+MySQLSchemaGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/priv/10ModelMapper/!svn/ver/156/progetto/src/MySQLSchemaGenerator.java
+END
+IdType.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/priv/10ModelMapper/!svn/ver/77/progetto/src/IdType.java
+END
+Model.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/priv/10ModelMapper/!svn/ver/181/progetto/src/Model.java
+END
+Relationship.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/priv/10ModelMapper/!svn/ver/172/progetto/src/Relationship.java
+END
+ConnectionType.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/priv/10ModelMapper/!svn/ver/77/progetto/src/ConnectionType.java
+END
+ModelProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/priv/10ModelMapper/!svn/ver/206/progetto/src/ModelProxy.java
+END
+MalformedSearcherException.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/priv/10ModelMapper/!svn/ver/77/progetto/src/MalformedSearcherException.java
+END
+RDBMSQueryGenerator.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/priv/10ModelMapper/!svn/ver/156/progetto/src/RDBMSQueryGenerator.java
+END
+MalformedModelRuntimeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/priv/10ModelMapper/!svn/ver/93/progetto/src/MalformedModelRuntimeException.java
+END
+MalformedClassException.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/priv/10ModelMapper/!svn/ver/77/progetto/src/MalformedClassException.java
+END
+AutoIncrement.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/priv/10ModelMapper/!svn/ver/77/progetto/src/AutoIncrement.java
+END
+MySQLModelFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/priv/10ModelMapper/!svn/ver/172/progetto/src/MySQLModelFactory.java
+END
+Validator.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/priv/10ModelMapper/!svn/ver/93/progetto/src/Validator.java
+END
+ModelFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/priv/10ModelMapper/!svn/ver/181/progetto/src/ModelFactory.java
+END
+MySQLTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/priv/10ModelMapper/!svn/ver/156/progetto/src/MySQLTypes.java
+END
+NotNull.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/priv/10ModelMapper/!svn/ver/33/progetto/src/NotNull.java
+END
+Id.java
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/priv/10ModelMapper/!svn/ver/32/progetto/src/Id.java
+END
